@@ -1,22 +1,13 @@
-import { GeoForm } from "@/src/components/GeoForm";
-import { Person } from "@/src/components/Person";
-import { PeopleList } from "@/src/data/PeopleList";
+
 
 const Page = () => {
-  return (
-   <div>
-      <h1 className="text-2xl font-bold">Ola Mundo</h1>
-      <h2>Outro texto</h2>
-      <GeoForm />
-      
   
-      {PeopleList.map(person =>
-        // eslint-disable-next-line react/jsx-key
-        <Person
-        name={person.name}
-        age={person.age}
-        />
-      )}
+  const horas = new Date().getHours();
+
+
+  return (
+   <div className="bg-gradient-to-r from-sky-400 to-blue-800 h-screen flex items-center justify-center">
+      <h1>{horas}</h1>
      
    </div>
   );
