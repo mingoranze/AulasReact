@@ -1,0 +1,5 @@
+export const PeopleList = [
+    {name: "John Doe", age: 30},
+    {name: "Jane Smith", age: 25},
+    {name: "Bob Johnson", age: 35}
+];
